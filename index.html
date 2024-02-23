@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Expense Tracker</h1>
+
+        <div class="form-group">
+            <label for="amount">Choose Expense Amount:</label>
+            <input type="number" id="amount" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Choose Description:</label>
+            <input type="text" id="description" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="category">Choose Category:</label>
+            <select name="category" id="category" class="form-control">
+                <option value="fuel">Fuel</option>
+                <option value="movie">Movie</option>
+                <option value="shopping">Shopping</option>
+            </select>
+        </div>
+
+        <button onclick="addExpense()" class="btn btn-success">Add Expense</button>
+
+        <ul id="expenseList" class="list-group mt-4"></ul>
+    </div>
+</body>
+</html>
